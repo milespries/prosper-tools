@@ -37,11 +37,11 @@ def scan(_amount, _yeild, _rating, _term):
     total_completed = 0
     total_defaulted = 0
     amount_borrowed = _amount
-    amount_borrowed_plus = int(amount_borrowed) + 2000
-    amount_borrowed_minus = int(amount_borrowed) - 2000
+    amount_borrowed_plus = int(amount_borrowed) + 3500
+    amount_borrowed_minus = int(amount_borrowed) - 3500
     borrower_rate = _yeild
-    borrower_rate_plus = float(borrower_rate) + 0.02
-    borrower_rate_minus = float(borrower_rate) - 0.02
+    borrower_rate_plus = float(borrower_rate) + 0.035
+    borrower_rate_minus = float(borrower_rate) - 0.035
     prosper_rating = _rating
     term = _term
     with open("all_loans.csv", "r") as f:
@@ -64,4 +64,4 @@ def scan(_amount, _yeild, _rating, _term):
         percent_complete = round(total_completed/total * 100, 2)
         return [percent_complete, total, total_loans]
     else:
-        return 0
+        return [0,0,0]
