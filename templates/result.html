@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<center>
+<section class="section is-large">
+    <h2 class="subtitle is-4">
+        Out of {{ total }} Prosper loans, <strong>{{ total_match }}</strong> matched your criteria
+    </h2>
+    <h1 class="title is-1"><span class="has-text-info">{{percent}}%</span> of them were Completed</h1>
+    
+</section>
+</center>
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form class="form-horizontal" action="/form" method="POST">
+    <fieldset>
+    
+    <!-- Text input-->
+    <div class="field">
+      <label class="label" for="textinput-0">Amount Borrowed</label>
+      <div class="control">
+        <input id="textinput-0" name="textinput-0" type="text" placeholder="$" class="input is-large">
+        
+      </div>
+    </div>
+    
+    <!-- Text input-->
+    <div class="field">
+      <label class="label" for="textinput-1">Yeild</label>
+      <div class="control">
+        <input id="textinput-1" name="textinput-1" type="text" placeholder="%" class="input is-large" required="">
+        
+      </div>
+    </div>
+    
+    <!-- Select Basic -->
+    <div class="field">
+        <label class="label" for="selectbasic-0">Prosper Rating</label>
+        <div class="control">
+            <div class="select">
+            <select id="selectbasic-0" name="selectbasic-0" class="is-large">
+                <option>AA</option>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
+                <option>E</option>
+                <option>HR</option>
+            </select>
+        </div>
+        </div>
+    </div>
+    
+    <!-- Select Basic -->
+    <div class="field">
+        <label class="label" for="selectbasic-1">Length of Term</label>
+        <div class="control">
+            <div class="select">
+            <select id="selectbasic-1" name="selectbasic-1" class="is-large">
+                <option>3 Years</option>
+                <option>5 Years</option>
+            </select>
+        </div>
+        </div>
+    </div>
+    
+    <!-- Button -->
+    <div class="field">
+      <label class="label" for="singlebutton-0"></label>
+      <div class="control">
+        <button id="singlebutton-0" name="singlebutton-0" class="button is-success">Submit</button>
+      </div>
+    </div>
+    
+    </fieldset>
+    </form>
+{% endblock %}

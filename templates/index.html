@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="content-wrapper">
+
+  <section class="hero is-landing is-medium">
+      <div class="hero-head">
+      </div>
+
+      <div class="hero-body">
+          <div class="container has-text-centered">
+
+              <div class="columns">
+                  <div class="column is-6 is-offset-3">
+                      <h1 class="title is-1">
+                          Prosper Tools
+                      </h1>
+                      <h2 class="subtitle is-4">
+                          Compare any listing with over <b><span class="tag is-success is-large">100,000</span></b> prosper loans 
+                      </h2>
+
+                      <figure class="image">
+                          <img class="blur" src="{{url_for('static', filename='prosper.png')}}" alt="" width="768">
+                      </figure>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container section has-text-centered">
+          <div class="columns">
+              <div class="column is-half is-offset-one-quarter">
+
+                  <h1 class="title is-2">Get Started Now</h1>
+                  <a href="/form" class="button button-store greentext">
+                      OKAY
+                  </a>
+
+                  <!--<a href="#" class="button button-store">
+                      INFO
+                  </a>-->
+              </div>
+          </div>
+
+      </div>
+  </section>
+</div>
+{% endblock %}
